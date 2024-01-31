@@ -8,6 +8,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+         <!-- Add the JavaScript function here -->
+    <script>
+        function scrollToPortfolio() {
+            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +26,7 @@
 							<h1>Hi, I'm Rachel.</h1>
 							<p class="major">Follow me as I pivot towards a new chapter in data science and visualisation. Browse my compilation of projects as I hone new data skills and explore different applications.</p>
 							<ul class="actions stacked">
-								<li><a href= "#portfolio" class="button big wide smooth-scroll-middle">Portfolio</a></li> 
+								<li><a class="button big wide smooth-scroll-middle" onclick="scrollToPortfolio()">Portfolio</a></li> 
 							</ul>
 						</div>
 						<div class="image">
